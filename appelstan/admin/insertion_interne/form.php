@@ -4,7 +4,7 @@
 <html>
     <head><title>Formulaire de saisie d'un nouvel interne</title>
 <link rel="stylesheet" href="../libs/bootstrap_sans_internet.css">
-<link rel="stylesheet" href="../CssForm/styleForm.css">
+<link rel="stylesheet" href="../../style/styleForm.css">
 
     </head>
     <body>
