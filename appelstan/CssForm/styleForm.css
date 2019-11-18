@@ -1,0 +1,75 @@
+body {
+  text-align: center;
+  background-image: url(../../img/Fond.png);
+  height: 780px;
+  margin: 40px;
+}
+
+.imgLogo {
+  /* text-align: center;
+  justify-content: center; */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #FFF;
+}
+
+li {
+  list-style: none;
+}
+
+.formulaire {
+  width: 540px;
+  /* justify-content: center;
+  text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.classe {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #FFF;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.bouton {
+  background-color: #0c2867;
+  color: #FFF;
+}
+
+
+.formLink {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #FFF;
+}
+
+a :link {
+  text-decoration: none;
+}
+.media{
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+	border-radius: 10px;
+}
+
+.media:hover {
+  background-color: rgba(175, 175, 175, 0.5);
+}

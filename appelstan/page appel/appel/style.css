@@ -1,0 +1,22 @@
+/* AppelStan
+Accueil Appel
+
+Alexandre Hébert & Joseph de Gaullier
+appelstan1920@gmail.com
+©AppelStan */
+
+#body {
+  text-align: center;
+  justify-content: center;
+
+}
+
+#button1 {
+  text-align: center;
+  justify-content: center;
+}
+
+.Svg {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,25 @@
+#body {
+  background-color: #5CB5FF;
+}
+
+img {
+  border-radius: 10px;
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.intro {
+  margin-top: 50px;
+  font-family: 'Chilanka', cursive;
+  text-align: center;
+  font-size: 25px;
+  color: #FFF;
+}
+
+.formU {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
