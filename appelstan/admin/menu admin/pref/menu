@@ -1,7 +1,0 @@
-<ul id="navigation">
-  <li><a href="#" title="form1.php">Création interne</a></li>
-  <li><a href="#" title="form4.php">Changement de place</a></li>
-  <li><a href="#" title="form2.php">Supression d'un interne</a></li>
-  <li><a href="#" title="form3.php">Supression de toute la base de donnée</a></li>
-  <li><a href="#" title="form5.php">Recherche d'un interne</a></li>
-</ul>

@@ -16,11 +16,13 @@ appelstan1920@gmail.com
         <?php
     if (isset($_POST['mot_de_passe']) AND $_POST['identifiant'] == "surveillant" AND $_POST['mot_de_passe'] ==  "surveillant") // Si le mot de passe est bon
     {
-      header('Location: ../presntation/page1.html');
+      header('Location:surveillant/new_2.html');
     exit();//redirection vers appel
     }
     if (isset($_POST['mot_de_passe']) AND $_POST['identifiant'] == "prefecture" AND $_POST['mot_de_passe'] ==  "prefecture")  // Si le mot de passe est bon
     {
+      header('Location:admin/menu.html');
+    exit();
     //redirection vers admin
     }
     else // Sinon, on affiche un message d'erreur
