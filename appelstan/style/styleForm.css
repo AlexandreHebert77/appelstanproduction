@@ -3,7 +3,10 @@ body {
   background-image: url(../../img/Fond.png);
   height: 780px;
   margin: 40px;
+  color: #FFF;
 }
+
+
 
 .imgLogo {
   /* text-align: center;
@@ -72,4 +75,26 @@ a :link {
 
 .media:hover {
   background-color: rgba(175, 175, 175, 0.5);
+}
+
+img {
+  border-radius: 10px;
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.intro {
+  margin-top: 50px;
+  font-family: 'Chilanka', cursive;
+  text-align: center;
+  font-size: 25px;
+  color: #FFF;
+}
+
+.formU {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }

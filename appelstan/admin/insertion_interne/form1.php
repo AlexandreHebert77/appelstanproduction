@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Formulaire de saisie d'un nouvel interne</h1>
-        <div class="imgLogo"><img src="../img/logoStanTransp.png" alt="logo"></div>
+        <div class="imgLogo"><img src="../../img/logoStanTransp.png" alt="logo"></div>
         <h2>Entrez les données demandées :</h2>
 
 
