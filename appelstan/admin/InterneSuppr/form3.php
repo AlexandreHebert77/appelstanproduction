@@ -9,6 +9,10 @@ include("fonctions.php");
     <body>
         <h1>Inscription interne</h1>
         <h2>Entrez les données demandées :</h2>
+
+<div class="formulaire">
+
+
         <p><form name="Etude" method="post" action="form2.php">
             Nom : <input class="form-control" type="text" name="Nom"/> <br/>
 			Prenom : <input class="form-control" type="text" name="Prenom"/> <br/>
@@ -16,6 +20,7 @@ include("fonctions.php");
             Place : <input class="form-control" type="text" name="place"/><br/>
             <input type="submit" class="btn btn-lg" name="valider" value="OK"/>
         </form></p>
+</div>
         <?php
         if (isset ($_POST['valider'])){
             //On récupère les valeurs entrées par l'utilisateur :

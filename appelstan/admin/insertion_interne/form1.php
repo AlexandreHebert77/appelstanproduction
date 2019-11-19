@@ -3,7 +3,7 @@
 ?>
 <html>
     <head><title>Formulaire de saisie d'un nouvel interne</title>
-<link rel="stylesheet" href="../libs/bootstrap_sans_internet.css">
+<link rel="stylesheet" href="../../libs/bootstrap_sans_internet.css">
 <link rel="stylesheet" href="../../style/styleForm.css">
 
     </head>
@@ -16,11 +16,11 @@
 
 <div class="formulaire">
         <form name="Etude" method="post" action="form.php">
-            <p>Nom : <input type="text" class="form-control" name="Nom" placeholder="NOM"/> <br/>
-	         Prenom : <input type="text" class="form-control" name="Prenom" placeholder="Prénom"/> <br/>
-            <div class="classe"><p>Classe : 	<input type="radio" name="classe" value="G"/>   2nde  <input type="radio" name="classe" value="F"/>   1ère  <input type="radio" name="classe" value="G"/>   Term  </p></div>
-            <p>Place : <input type="text" class="form-control" name="place" placeholder="Place"/><br/>
-            <input type="submit" class="btn btn-primary btn-lg bouton" style="margin:10px" name="valider" value="OK"/></p>
+            Nom : <input class="form-control" type="text" name="Nom" placeholder="NOM"/> <br/>
+	         Prenom : <input class="form-control" type="text" name="Prenom" placeholder="Prénom"/> <br/>
+            <div class="classe">Classe : 	<input type="radio" name="classe" value="G"/>   2nde  <input type="radio" name="classe" value="F"/>   1ère  <input type="radio" name="classe" value="G"/>   Term  </div>
+            Place : <input type="text" class="form-control" name="place" placeholder="Place"/><br/>
+            <input type="submit" class="btn btn-lg" style="margin:10px" name="valider" value="OK"/>
         </form>
 </div>
         <?php
