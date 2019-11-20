@@ -18,7 +18,7 @@ include("fonctions.php");
 			Prenom : <input class="form-control" type="text" name="Prenom"/> <br/>
             Classe 	<input type="radio" name="classe" value="G"/>2nd<input type="radio" name="classe" value="F"/>1er<input type="radio" name="classe" value="G"/>Term<br/>
             Place : <input class="form-control" type="text" name="place"/><br/>
-            <input type="submit" class="btn btn-lg" name="valider" value="OK"/>
+            <input type="submit" class="btn btn-lg" style="color:black;" name="valider" value="OK"/>
         </form></p>
 </div>
         <?php

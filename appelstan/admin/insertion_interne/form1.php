@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Formulaire de saisie d'un nouvel interne</h1>
-        <div class="imgLogo"><img src="../../img/logoStanTransp.png" alt="logo"></div>
+        <!-- <div class="imgLogo"><img src="../../img/logoStanTransp.png" alt="logo"></div> -->
         <h2>Entrez les données demandées :</h2>
 
 
@@ -20,7 +20,7 @@
 	         Prenom : <input class="form-control" type="text" name="Prenom" placeholder="Prénom"/> <br/>
             <div class="classe">Classe : 	<input type="radio" name="classe" value="G"/>   2nde  <input type="radio" name="classe" value="F"/>   1ère  <input type="radio" name="classe" value="G"/>   Term  </div>
             Place : <input type="text" class="form-control" name="place" placeholder="Place"/><br/>
-            <input type="submit" class="btn btn-lg" style="margin:10px" name="valider" value="OK"/>
+            <input type="submit" class="btn btn-lg" style="margin:10px; color:black;" name="valider" value="OK"/>
         </form>
 </div>
         <?php
