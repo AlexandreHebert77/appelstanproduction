@@ -1,5 +1,5 @@
 <?php
-//include("NouveauInterne.php");
+include("NouveauInterne.php");
 ?>
 <html>
     <head><title>Formulaire de saisie d'un nouvel interne</title>
@@ -28,7 +28,7 @@
         if (isset ($_POST['valider'])){
             $file = $_FILES['image']['tmp_name'];
 	        if (!isset($file))
-		    echo "S'il vous plait sélectionner une image";
+		    echo "S'il vous plait sélectionnez une image";
 	        else
 	        {
 	        $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
@@ -42,17 +42,19 @@
                     $Nom=$_POST['Nom'];
                     $Prenom=$_POST['Prenom'];
                     $Classe=$_POST['Classe'];
-	                $Place=$_POST['Place'];
+	                  $Place=$_POST['Place'];
+                    $Etat='ABS';
 
-                    try { $bdd = new PDO('mysql:host=localhost;dbname=ETUDE','root',''); }
-                    catch (Exeption $e) { die('Erreur : ' .$e->getMessage())  or die(print_r($bdd->errorInfo())); }
-                    $req = $bdd->prepare("INSERT INTO interne VALUES(?,?,?,?,?)");
-                    $req->execute(array($Nom,$Prenon,$Classe,$Place,$image));
+                    //try { $bdd = new PDO('mysql:host=localhost;dbname=ETUDE','root',''); }
+                    //catch (Exeption $e) { die('Erreur : ' .$e->getMessage())  or die(print_r($bdd->errorInfo())); }
+                    //$req = $bdd->prepare("INSERT INTO appel VALUES(?,?,?,?,?)");
+                    //$req->execute(array($Nom,$Prenon,$Classe,$Place,$image));
 
-                    //connectMaBase();
-                    //$sql = "INSERT INTO interne VALUES('$Nom','$Prenom','$Classe','$Place','$image')";
-                    //conenctMaBase();
-                    //mysql_query ($sql) or die ('Erreur SQL !');
+                    connectMaBase();
+                    $sql = "INSERT INTO appel VALUES('$Nom','$Prenom','$Classe','$Place','$image')";
+                    $sql = "INSERT INTO `appel`(`Nom`, `Prenom`, `Classe`, `Place`, `Etat`, `Image`) VALUES ('$Nom','$Prenom','$Classe','$Place','$Etat','$image')"
+                    conenctMaBase();
+                    mysql_query ($sql) or die ('Erreur SQL !');
 
             // on ferme la connexion
                     mysql_close();

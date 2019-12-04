@@ -1,6 +1,6 @@
 <?php
 function connectMaBase(){
-    $base = mysql_connect ('localhost', 'Appel', 'Appel');  
+    $base = mysql_connect ('localhost', 'root', '');  
     mysql_select_db ('ETUDE', $base) ;
 }
 ?>
