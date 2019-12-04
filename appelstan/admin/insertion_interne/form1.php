@@ -1,6 +1,9 @@
-<?php
-include("NouveauInterne.php");
-?>
+<!-- <?php
+// function connectMaBase(){
+//     $base = mysql_connect ('localhost', 'mamp', '');
+//     mysql_select_db ('ETUDE', $base) ;
+// }
+?> -->
 <html>
     <head><title>Formulaire de saisie d'un nouvel interne</title>
 <link rel="stylesheet" href="../../libs/bootstrap_sans_internet.css">
@@ -25,6 +28,14 @@ include("NouveauInterne.php");
         </form>
 </div>
         <?php
+
+        function connectMaBase(){
+            $base = mysql_connect ('localhost', 'mamp', '');
+            mysql_select_db ('ETUDE', $base) ;
+        }
+
+// ini_set('display_errors', 'on');
+
         if (isset ($_POST['valider'])){
             $file = $_FILES['image']['tmp_name'];
 	        if (!isset($file))
@@ -51,9 +62,9 @@ include("NouveauInterne.php");
                     //$req->execute(array($Nom,$Prenon,$Classe,$Place,$image));
 
                     connectMaBase();
-                    $sql = "INSERT INTO appel VALUES('$Nom','$Prenom','$Classe','$Place','$image')";
-                    $sql = "INSERT INTO `appel`(`Nom`, `Prenom`, `Classe`, `Place`, `Etat`, `Image`) VALUES ('$Nom','$Prenom','$Classe','$Place','$Etat','$image')"
-                    conenctMaBase();
+                    //$sql = "INSERT INTO appel VALUES('$Nom','$Prenom','$Classe','$Place','$image')";
+                    $sql = 'INSERT INTO appel (Nom, Prenom, Classe, Place, Etat, Image)  VALUES ("'.$Nom.'","'.$Prenom.'","'.$Classe.'","'.$Place.'","'.$Etat.'","'.$image.'")';
+                    // connectMaBase();
                     mysql_query ($sql) or die ('Erreur SQL !');
 
             // on ferme la connexion
@@ -61,6 +72,10 @@ include("NouveauInterne.php");
                 }
              }
         }
+
         ?>
     </body>
 </html>
+
+<!--
+(Nom, Prenom, Classe, Place, Etat, Image) -->
