@@ -21,10 +21,14 @@
         <form name="Etude" method="post" action="form1.php">
             Nom : <input class="form-control" type="text" name="Nom" placeholder="NOM"/> <br/>
 	         Prenom : <input class="form-control" type="text" name="Prenom" placeholder="Prénom"/> <br/>
-            <div class="classe">Classe : 	<input type="radio" name="classe" value="G"/>   2nde  <input type="radio" name="classe" value="F"/>   1ère  <input type="radio" name="classe" value="G"/>   Term  </div>
+            <div class="classe" style="margin-bottom:12px;">Classe : 	<input type="radio" name="classe" value="G"/>   2nde  <input type="radio" name="classe" value="F"/>   1ère  <input type="radio" name="classe" value="G"/>   Term  </div>
             Place : <input type="text" class="form-control" name="place" placeholder="Place"/><br/>
-            Image: <input name="userfile" type="file"/>
-            <input type="submit" class="btn btn-lg" style="margin:10px; color:black;" name="valider" value="OK"/>
+            <!-- Image: <input name="userfile" type="file" accept=".png, .jpg, .jpeg, .svg, .mpeg"/>
+            <input type="submit" class="btn btn-lg" style="margin:10px; color:black;" name="valider" value="OK"/> -->
+            <div>
+              <label for="files" class="btn" style="background-color:#FFF; color:grey;">Selectionnez votre image</label>
+              <input id="files" style="visibility:hidden;" type="file">
+            </div>
         </form>
 </div>
         <?php
