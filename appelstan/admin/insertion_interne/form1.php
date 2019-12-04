@@ -15,7 +15,7 @@
 
 
 <div class="formulaire">
-        <form name="Etude" method="post" action="form.php">
+        <form name="Etude" method="post" action="form1.php">
             Nom : <input class="form-control" type="text" name="Nom" placeholder="NOM"/> <br/>
 	         Prenom : <input class="form-control" type="text" name="Prenom" placeholder="Prénom"/> <br/>
             <div class="classe">Classe : 	<input type="radio" name="classe" value="G"/>   2nde  <input type="radio" name="classe" value="F"/>   1ère  <input type="radio" name="classe" value="G"/>   Term  </div>
