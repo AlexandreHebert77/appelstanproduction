@@ -1,5 +1,5 @@
 <?php
-include("fonctions.php");
+include("NouveauInterne.php");
 ?>
 <html>
     <head><title>Formulaire de saisie interne </title>
@@ -13,10 +13,10 @@ include("fonctions.php");
 <div class="formulaire">
 
 
-        <p><form name="Etude" method="post" action="form2.php">
+        <p><form name="Etude" method="post" action="form3.php">
             Nom : <input class="form-control" type="text" name="Nom"/> <br/>
 			Prenom : <input class="form-control" type="text" name="Prenom"/> <br/>
-            Classe 	<input type="radio" name="classe" value="G"/>2nd<input type="radio" name="classe" value="F"/>1er<input type="radio" name="classe" value="G"/>Term<br/>
+            Classe 	<input type="radio" name="classe" value="G"/> 2nde <input type="radio" name="classe" value="F"/> 1ere <input type="radio" name="classe" value="G"/> Term <br/>
             Place : <input class="form-control" type="text" name="place"/><br/>
             <input type="submit" class="btn btn-lg" style="color:black;" name="valider" value="OK"/>
         </form></p>
@@ -30,14 +30,14 @@ include("fonctions.php");
 			$Place=$_POST['Place'];
 
 
-            try { $bdd = new PDO('mysql:host=localhost;dbname=ETUDE','root',''); }
-            catch (Exeption $e) { die('Erreur : ' .$e->getMessage())  or die(print_r($bdd->errorInfo())); }
-            $req = $bdd->prepare('DELETE FROM interne WHERE Nom=? and Prenom=?');
-            $req->execute(array($Nom,$Prenon));
+            // try { $bdd = new PDO('mysql:host=localhost;dbname=ETUDE','root',''); }
+            // catch (Exeption $e) { die('Erreur : ' .$e->getMessage())  or die(print_r($bdd->errorInfo())); }
+            // $req = $bdd->prepare('DELETE FROM appel WHERE Nom=? and Prenom=?');
+            // $req->execute(array($Nom,$Prenon));
 
-            //connectMaBase();
-            //$sql = 'DELETE FROM interne WHERE Nom="'.$Nom.'" and Prenom="'.$Prenom.'"';
-            //mysql_query ($sql) or die ('Erreur SQL !');
+            connectMaBase();
+            $sql = 'DELETE FROM appel WHERE Nom=".$Nom." and Prenom=".$Prenom."';
+            mysql_query ($sql) or die ('Erreur SQL !');
 
             // on ferme la connexion
             mysql_close();

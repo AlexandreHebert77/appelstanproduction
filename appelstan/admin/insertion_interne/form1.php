@@ -54,7 +54,7 @@
                     $Prenom=$_POST['Prenom'];
                     $Classe=$_POST['Classe'];
 	                  $Place=$_POST['Place'];
-                    $Etat='ABS';
+                    //$Etat='ABS';
 
                     //try { $bdd = new PDO('mysql:host=localhost;dbname=ETUDE','root',''); }
                     //catch (Exeption $e) { die('Erreur : ' .$e->getMessage())  or die(print_r($bdd->errorInfo())); }
@@ -63,7 +63,7 @@
 
                     connectMaBase();
                     //$sql = "INSERT INTO appel VALUES('$Nom','$Prenom','$Classe','$Place','$image')";
-                    $sql = 'INSERT INTO appel (Nom, Prenom, Classe, Place, Etat, Image) VALUES ("'.$Nom.'","'.$Prenom.'","'.$Classe.'","'.$Place.'","'.$Etat.'","'.$image.'")';
+                    $sql = 'INSERT INTO appel (Nom, Prenom, Classe, Place, Etat, Image) VALUES ("'.$Nom.'","'.$Prenom.'","'.$Classe.'","'.$Place.'","ABS","'.$image.'")';
                     // connectMaBase();
                     mysql_query ($sql) or die ('Erreur SQL !');
 
