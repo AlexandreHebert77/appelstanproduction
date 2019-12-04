@@ -63,7 +63,7 @@
 
                     connectMaBase();
                     //$sql = "INSERT INTO appel VALUES('$Nom','$Prenom','$Classe','$Place','$image')";
-                    $sql = 'INSERT INTO appel (Nom, Prenom, Classe, Place, Etat, Image)  VALUES ("'.$Nom.'","'.$Prenom.'","'.$Classe.'","'.$Place.'","'.$Etat.'","'.$image.'")';
+                    $sql = 'INSERT INTO appel (Nom, Prenom, Classe, Place, Etat, Image) VALUES ("'.$Nom.'","'.$Prenom.'","'.$Classe.'","'.$Place.'","'.$Etat.'","'.$image.'")';
                     // connectMaBase();
                     mysql_query ($sql) or die ('Erreur SQL !');
 
