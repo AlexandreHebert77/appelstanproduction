@@ -20,6 +20,7 @@
 	         Prenom : <input class="form-control" type="text" name="Prenom" placeholder="Prénom"/> <br/>
             <div class="classe">Classe : 	<input type="radio" name="classe" value="G"/>   2nde  <input type="radio" name="classe" value="F"/>   1ère  <input type="radio" name="classe" value="G"/>   Term  </div>
             Place : <input type="text" class="form-control" name="place" placeholder="Place"/><br/>
+            Image: <input name="userfile" type="file" />
             <input type="submit" class="btn btn-lg" style="margin:10px; color:black;" name="valider" value="OK"/>
         </form>
 </div>
