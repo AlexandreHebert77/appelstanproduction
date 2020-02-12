@@ -1,9 +1,3 @@
-<!-- <?php
-// function connectMaBase(){
-//     $base = mysql_connect ('localhost', 'mamp', '');
-//     mysql_select_db ('ETUDE', $base) ;
-// }
-?> -->
 <html>
     <head><title>Formulaire de saisie d'un nouvel interne</title>
 <link rel="stylesheet" href="../../libs/bootstrap_sans_internet.css">
