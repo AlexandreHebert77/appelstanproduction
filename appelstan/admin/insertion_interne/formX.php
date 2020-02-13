@@ -22,6 +22,7 @@
             <div>
               <label for="files" class="btn" style="background-color:#FFF; color:grey;">Selectionnez votre image</label>
               <input id="files" style="visibility:hidden;" type="file">
+              <input type="submit" value="Envoyer" />
             </div>
         </form>
 </div>
